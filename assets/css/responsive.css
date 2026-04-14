@@ -1,0 +1,330 @@
+@media (max-width: 1200px) {
+  .hero-grid,
+  .cta,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards,
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-actions {
+    justify-content: flex-start;
+  }
+
+  .hero-panel {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    min-height: 78px;
+  }
+
+  .brand-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .brand-text span {
+    font-size: 1.2rem;
+  }
+
+  .brand-text small {
+    font-size: 0.72rem;
+    letter-spacing: 1.3px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 90px 0 70px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 5vw, 4.4rem);
+    line-height: 1.02;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    background: rgba(6, 6, 6, 0.97);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.26);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero-grid,
+  .cards,
+  .features,
+  .gallery-grid,
+  .hero-stats,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 80px 0 60px;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(180deg, rgba(4, 4, 4, 0.94) 0%, rgba(4, 4, 4, 0.78) 45%, rgba(4, 4, 4, 0.72) 100%),
+      url('../img/hero/herobg.png') center/cover no-repeat;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 9vw, 3.8rem);
+    max-width: 100%;
+  }
+
+  .hero p {
+    max-width: 100%;
+  }
+
+  .hero-panel {
+    padding: 24px;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .cta {
+    padding: 32px 24px;
+  }
+
+  .cta-actions {
+    justify-content: flex-start;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-text span {
+    font-size: 1rem;
+  }
+
+  .brand-text small {
+    font-size: 0.68rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(94%, var(--container-width));
+  }
+
+  .navbar {
+    min-height: 74px;
+    gap: 12px;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-text span {
+    font-size: 0.92rem;
+    line-height: 1.05;
+  }
+
+  .brand-text small {
+    font-size: 0.62rem;
+    letter-spacing: 0.9px;
+  }
+
+  .nav-links {
+    top: 74px;
+  }
+
+  .hero {
+    padding: 70px 0 50px;
+  }
+
+  .eyebrow {
+    font-size: 0.78rem;
+    padding: 7px 12px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 11vw, 3.2rem);
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    font-size: 0.96rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px 18px;
+  }
+
+  .stat-card {
+    padding: 20px;
+  }
+
+  .stat-card strong {
+    font-size: 1.6rem;
+  }
+
+  .card-image {
+    height: 210px;
+  }
+
+  .card-body,
+  .feature-box,
+  .testimonial {
+    padding: 22px 18px;
+  }
+
+  .gallery-item {
+    min-height: 250px;
+  }
+
+  .hero-panel {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .hero-list li {
+    padding: 14px 15px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-subtitle {
+    font-size: 0.96rem;
+    margin-bottom: 34px;
+  }
+
+  .cta {
+    padding: 26px 18px;
+    border-radius: 24px;
+  }
+
+  .cta h2 {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  footer {
+    margin-top: 70px;
+  }
+
+  .whatsapp-float {
+    width: 54px;
+    height: 54px;
+    right: 16px;
+    bottom: 16px;
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(95%, var(--container-width));
+  }
+
+  .brand-text span {
+    font-size: 0.84rem;
+  }
+
+  .brand-text small {
+    font-size: 0.58rem;
+    letter-spacing: 0.7px;
+  }
+
+  .hero {
+    padding-top: 64px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.95rem, 11vw, 2.7rem);
+  }
+
+  .hero-panel h2,
+  .card-body h3,
+  .feature-box h3 {
+    font-size: 1.02rem;
+  }
+
+  .testimonial p,
+  .card-body p,
+  .feature-box p,
+  .hero-panel p,
+  .hero-list li {
+    font-size: 0.94rem;
+  }
+
+  .copyright {
+    font-size: 0.84rem;
+  }
+}
